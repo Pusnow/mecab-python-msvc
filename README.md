@@ -7,12 +7,16 @@ MeCab python module for MeCab 0.996
 
 ## 설치
 
+    :::text
+    % git clone https://bitbucket.org/eunjeon/mecab-python-0.996.git
+    % cd mecab-python-0.996
     % python setup.py build
     % su
     # python setup.py install
   
 You can change the install directory with the --prefix option. For example:
 
+    :::text
     % python setup.py install --prefix=/tmp/pybuild/foobar
 
 ## 사용법
