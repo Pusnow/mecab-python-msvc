@@ -10,7 +10,7 @@ sentence = "무궁화꽃이피었습니다."
 try:
     print(MeCab.VERSION)
 
-    t = MeCab.Tagger ('-r C:\\mecab\\mecabrc')
+    t = MeCab.Tagger ()
     print(t.parse(sentence))
 
     m = t.parseToNode(sentence)
