@@ -4,18 +4,17 @@ from distutils.core import setup,Extension,os
 import string
 
 def cmd1(str):
-    return os.popen(str).readlines()[0][:-1]
+    return os.popen(str).readlines()[0][:1]
 
-def cmd2(str):
-    return cmd1(str).split()
 
 setup(name = "mecab-python",
-	version = cmd1("mecab-config --version"),
+	version = cmd1("C:\mecab\mecab.exe --version"),
 	py_modules=["MeCab"],
+	data_files = [("lib\\site-packages\\", ["C:\\mecab\\libmecab.dll"])],
 	ext_modules = [
 		Extension("_MeCab",
 			["MeCab_wrap.cxx",],
-			include_dirs=cmd2("mecab-config --inc-dir"),
-			library_dirs=cmd2("mecab-config --libs-only-L"),
-			libraries=cmd2("mecab-config --libs-only-l"))
+			include_dirs=["C:\\mecab\\"],
+			library_dirs=["C:\\mecab\\"],
+			libraries=["libmecab"])
 			])
