@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from distutils.core import setup,Extension,os
+from setuptools import setup,Extension,os
 import string
 
 def cmd1(str):
-    return os.popen(str).readlines()[0][:1]
+    return os.popen(str).readlines()[0].split()[-1] + "-msvc"
 
 
 setup(name = "mecab-python",
