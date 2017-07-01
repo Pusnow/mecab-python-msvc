@@ -1,5 +1,7 @@
 # mecab-python-msvc
 
+[![Build status](https://ci.appveyor.com/api/projects/status/0duedofp6tdldkig/branch/master?svg=true)](https://ci.appveyor.com/project/Pusnow/mecab-python-msvc/branch/master)
+
 mecab-python-msvc는 mecab-ko-msvc에서 사용할 수 있는 mecab-python을 빌드하는 프로젝트입니다.
 
 ## 설치
