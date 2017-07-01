@@ -6,7 +6,7 @@ mecab-python-msvc는 mecab-ko-msvc에서 사용할 수 있는 mecab-python을 �
 
 * [mecab-ko-msvc](https://github.com/Pusnow/mecab-ko-msvc/)를 설치하지 않았으면 설치해야 합니다.
 * [mecab-ko-dic-msvc](https://github.com/Pusnow/mecab-ko-dic-msvc/)를 설치하지 않았으면 설치해야 합니다.
-* 실행 환경에 맞는 [최신버전](https://github.com/Pusnow/mecab-ko-dic-msvc/releases/latest)을 다운로드합니다. 32bit, 64bit 버전의 Python 2.7, 3.3, 3.4, 3.5, 3.6 을 지원합니다.
+* 실행 환경에 맞는 [최신버전](https://github.com/Pusnow/mecab-python-msvc/releases/latest)을 다운로드합니다. 32bit, 64bit 버전의 Python 2.7, 3.3, 3.4, 3.5, 3.6 을 지원합니다.
 * `pip install <다운로드한 whl 파일>` 로 설치할 수 있습니다. venv를 사용하지 않을 경우 관리자 권한이 필요합니다.  
 
 ## 빌드 정보
