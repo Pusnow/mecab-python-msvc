@@ -21,7 +21,7 @@ before_build:
     - C:\Python%PYTHON_VERSION%\python.exe -m pip install wheel
     
 build_script:
-    - C:\Python%PYTHON_VERSION%\python.exe -m setup.py bdist_wheel
+    - C:\Python%PYTHON_VERSION%\python.exe setup.py bdist_wheel
     
 
 artifacts: 
