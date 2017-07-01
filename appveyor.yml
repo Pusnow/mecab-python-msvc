@@ -1,0 +1,34 @@
+
+platform:
+- x64
+
+environment:
+  matrix:
+    - PYTHON_VERSION: 27
+    - PYTHON_VERSION: 27-x64
+    - PYTHON_VERSION: 33
+    - PYTHON_VERSION: 33-x64
+    - PYTHON_VERSION: 34
+    - PYTHON_VERSION: 34-x64
+    - PYTHON_VERSION: 35
+    - PYTHON_VERSION: 35-x64
+    - PYTHON_VERSION: 36
+    - PYTHON_VERSION: 36-x64
+
+build_script:
+    - C:\Python%PYTHON_VERSION%\python.exe -m setup.py bdist_wheel
+    
+
+artifacts: 
+  - path: 'dist\*.zip'
+    name: MeCab-Python-MSVC
+deploy:
+  description: 'MeCab-Python-MSVC'
+  provider: GitHub
+  auth_token:
+    secure: OmfpZhJdq1DA5Yl/KrpU0VVV6jCM7DQ/8gH7IH1Fld9TtRvnHCTLxJSTXVgsOEmJ
+  artifact: MeCab-Python-MSVC    
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true
