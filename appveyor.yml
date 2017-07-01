@@ -6,17 +6,27 @@ platform:
 environment:
   matrix:
     - PYTHON_VERSION: 27
+      ARCH: x86
     - PYTHON_VERSION: 27-x64
+      ARCH: x64
     - PYTHON_VERSION: 33
+      ARCH: x86
     - PYTHON_VERSION: 33-x64
+      ARCH: x64
     - PYTHON_VERSION: 34
+      ARCH: x86
     - PYTHON_VERSION: 34-x64
+      ARCH: x64
     - PYTHON_VERSION: 35
+      ARCH: x86
     - PYTHON_VERSION: 35-x64
+      ARCH: x64
     - PYTHON_VERSION: 36
+      ARCH: x86
     - PYTHON_VERSION: 36-x64
+      ARCH: x64
 before_build:
-    - ps: Start-FileDownload 'https://github.com/Pusnow/mecab-ko-msvc/releases/download/release-0.9.2-msvc-3/mecab-ko-msvc-x64.zip'
+    - ps: Start-FileDownload 'https://github.com/Pusnow/mecab-ko-msvc/releases/download/release-0.9.2-msvc-3/mecab-ko-msvc-%ARCH%.zip'
     - 7z x mecab-ko-msvc-x64.zip -oc:\mecab
     - C:\Python%PYTHON_VERSION%\python.exe -m pip install wheel
     
