@@ -2,6 +2,7 @@
 platform:
 - x64
 
+
 environment:
   matrix:
     - PYTHON_VERSION: 27
@@ -14,13 +15,16 @@ environment:
     - PYTHON_VERSION: 35-x64
     - PYTHON_VERSION: 36
     - PYTHON_VERSION: 36-x64
-
+before_build:
+    - ps: Start-FileDownload 'https://github.com/Pusnow/mecab-ko-msvc/releases/download/release-0.9.2-msvc-3/mecab-ko-msvc-x64.zip'
+    - 7z x mecab-ko-msvc-x64.zip -oc:\mecab
+    
 build_script:
     - C:\Python%PYTHON_VERSION%\python.exe -m setup.py bdist_wheel
     
 
 artifacts: 
-  - path: 'dist\*.zip'
+  - path: 'dist\*.whl'
     name: MeCab-Python-MSVC
 deploy:
   description: 'MeCab-Python-MSVC'
