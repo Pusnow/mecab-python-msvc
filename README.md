@@ -17,6 +17,12 @@ mecab-python-msvc는 mecab-ko-msvc에서 사용할 수 있는 mecab-python을 �
 * 빌드 과정은 [Appveyor 페이지](https://ci.appveyor.com/project/Pusnow/mecab-python-msvc) 에 기록되어 있습니다.
 * 개인적으로 빌드를 하고 싶으신 분은 [appveyor.yml](https://github.com/Pusnow/mecab-python-msvc/blob/master/appveyor.yml) 을 참고하시기 바랍니다.
 
+## 관련 프로젝트
+
+* [Mecab-Ko-MSVC](https://github.com/Pusnow/mecab-ko-msvc)
+* [Mecab-Ko-MSVC](https://github.com/Pusnow/mecab-ko-msvc)
+* [Mecab-Python-MSVC](https://github.com/Pusnow/mecab-python-msvc)
+* [Mecab-Java-MSVC](https://github.com/Pusnow/mecab-java-msvc)
 
 
 MeCab python module for MeCab 0.996
