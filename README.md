@@ -21,7 +21,6 @@ mecab-python-msvc는 mecab-ko-msvc에서 사용할 수 있는 mecab-python을 �
 
 * [Mecab-Ko-MSVC](https://github.com/Pusnow/mecab-ko-msvc)
 * [Mecab-Ko-MSVC](https://github.com/Pusnow/mecab-ko-msvc)
-* [Mecab-Python-MSVC](https://github.com/Pusnow/mecab-python-msvc)
 * [Mecab-Java-MSVC](https://github.com/Pusnow/mecab-java-msvc)
 
 
