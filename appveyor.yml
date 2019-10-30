@@ -36,7 +36,7 @@ environment:
     - PYTHON_VERSION: 38-x64
       ARCH: x64
       
-build: Script
+build: off
 
 before_build:
     - appveyor DownloadFile https://github.com/Pusnow/mecab-ko-msvc/releases/download/release-0.9.2-msvc-3/mecab-ko-msvc-%ARCH%.zip
