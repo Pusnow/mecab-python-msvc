@@ -1,4 +1,4 @@
-name: build-dict-index
+name: Build
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "master" ]
 jobs:
-  build:
+  build-python-lib:
     runs-on: windows-latest
     strategy:
       matrix:
