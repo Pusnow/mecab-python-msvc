@@ -1,5 +1,13 @@
 # mecab-python-msvc
 
+## 공지: 이전됨 - https://github.com/Pusnow/mecab-ko-msvc
+
+프로젝트가 하나의 GitHub 리포지토리로 통합되었습니다. 다음 링크를 방문해 주세요.
+
+https://github.com/Pusnow/mecab-ko-msvc
+
+## 설명
+
 [![Build](https://github.com/Pusnow/mecab-python-msvc/actions/workflows/build-python-lib.yml/badge.svg)](https://github.com/Pusnow/mecab-python-msvc/actions/workflows/build-python-lib.yml)
 
 mecab-python-msvc는 mecab-ko-msvc에서 사용할 수 있는 mecab-python을 빌드하는 프로젝트입니다.
